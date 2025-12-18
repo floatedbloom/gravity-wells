@@ -1,0 +1,49 @@
+/home/georgelapin23_gmail.com/gravity_well/reddit_2024/create_conf_bias.py:78: SyntaxWarning: invalid escape sequence '\_'
+  1. **strongly\_against / strongly\_in\_favor**: Marks text showing strong opinions, emotional expressions, or argumentative tones.
+2025-08-08 19:24:40,921 - INFO - MPI initialized: rank 0/4
+2025-08-08 19:24:40,922 - INFO - Rank 0: Processing subreddits 0-4: ['SandersForPresident', 'flatearth', 'trump', 'science', 'cars']
+2025-08-08 19:24:40,924 - INFO - HPC Parallel Bias Analysis
+2025-08-08 19:24:40,925 - INFO - Total subreddits: 18
+2025-08-08 19:24:40,927 - INFO - MPI nodes: 4
+2025-08-08 19:24:40,928 - INFO - Workers per node: 16
+2025-08-08 19:24:40,929 - INFO - Sample size: 25 users per subreddit
+2025-08-08 19:24:40,931 - INFO - HPC Runtime Estimate:
+2025-08-08 19:24:40,932 - INFO -   Total users: 125
+2025-08-08 19:24:40,934 - INFO -   Workers per node: 16
+2025-08-08 19:24:40,935 - INFO -   MPI nodes: 4
+2025-08-08 19:24:40,936 - INFO -   Estimated time per user: 0.5 minutes
+2025-08-08 19:24:40,938 - INFO -   Total estimated time: 1.1 hours (0.0 days)
+2025-08-08 19:24:40,939 - INFO - Rank 0: Checking Ollama server connection...
+2025-08-08 19:24:40,958 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-08-08 19:24:40,960 - INFO - Rank 0: Ollama server connected. Available models: ['qwen2.5:7b']
+2025-08-08 19:24:41,600 - INFO - Starting HPC parallel bias analysis...
+2025-08-08 19:24:41,603 - INFO - Debug: Current working directory: /home/georgelapin23_gmail.com/gravity_well/reddit_2024
+2025-08-08 19:24:41,605 - INFO - Debug: Checking if data/filtered_analyzable exists: False
+2025-08-08 19:24:41,607 - INFO - Debug: Checking if ../data/filtered_analyzable exists: False
+2025-08-08 19:24:41,609 - INFO - Debug: Checking if ../../data/filtered_analyzable exists: False
+2025-08-08 19:24:41,611 - INFO - Debug: Checking if data/with_likes exists: True
+2025-08-08 19:24:41,612 - INFO - Found data directory: data/with_likes
+2025-08-08 19:24:43,476 - INFO - Debug: Created HPCRedditor: MM__FOOD (type: HPCRedditor)
+2025-08-08 19:24:43,478 - INFO - Debug: Created HPCRedditor: Frigg_off_MrLahey (type: HPCRedditor)
+2025-08-08 19:24:43,479 - INFO - Debug: Created HPCRedditor: Zipwerner (type: HPCRedditor)
+2025-08-08 19:24:43,481 - INFO - Debug: Created HPCRedditor: Bridivar (type: HPCRedditor)
+2025-08-08 19:24:43,482 - INFO - Debug: Created HPCRedditor: -poop-in-the-soup- (type: HPCRedditor)
+2025-08-08 19:24:43,655 - INFO - Debug: Created HPCComment: eczazg7 (type: HPCComment)
+2025-08-08 19:24:43,657 - INFO - Debug: Created HPCComment: eczazyz (type: HPCComment)
+2025-08-08 19:24:43,658 - INFO - Debug: Created HPCComment: eczb0gt (type: HPCComment)
+2025-08-08 19:24:43,660 - INFO - Debug: Created HPCComment: eczb2z2 (type: HPCComment)
+2025-08-08 19:24:43,661 - INFO - Debug: Created HPCComment: eczb4n8 (type: HPCComment)
+2025-08-08 19:24:44,684 - INFO - Debug: Found subreddits in data: ['cars', 'SandersForPresident', 'flatearth', 'science', 'trump']
+2025-08-08 19:24:44,686 - INFO - Debug: Looking for subreddits: ['SandersForPresident', 'flatearth', 'trump', 'science', 'cars']
+2025-08-08 19:24:44,775 - INFO - Rank 0: Using 16 parallel workers
+2025-08-08 19:24:44,779 - INFO - Rank 0: Skipping already completed subreddit: SandersForPresident
+2025-08-08 19:24:44,781 - INFO - Rank 0: Skipping already completed subreddit: flatearth
+2025-08-08 19:24:44,782 - INFO - Rank 0: Skipping already completed subreddit: trump
+2025-08-08 19:24:44,783 - INFO - Rank 0: Skipping already completed subreddit: science
+2025-08-08 19:24:44,785 - INFO - Rank 0: Skipping already completed subreddit: cars
+2025-08-08 19:26:52,017 - INFO - Merging results from all nodes...
+2025-08-08 19:26:52,035 - INFO - Merged 0 entries for hiking
+2025-08-08 19:26:52,037 - INFO - Analysis complete!
+2025-08-08 19:26:52,039 - INFO - Total runtime: 0.0 hours
+2025-08-08 19:26:52,040 - INFO - Actual vs estimated: 0.0h vs 1.1h
+2025-08-08 19:26:52,042 - INFO - Cache statistics: {'hits': 0, 'misses': 0, 'hit_rate': 0, 'memory_entries': 0, 'disk_entries': 0}

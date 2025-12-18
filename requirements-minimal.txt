@@ -1,0 +1,31 @@
+# Only includes packages actually used in the codebase
+
+# Core data processing
+pandas==2.2.3
+numpy==1.26.4
+
+# Scientific computing and statistics
+scipy==1.14.1
+scikit-learn==1.5.1
+statsmodels==0.14.4
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Progress bars and utilities
+tqdm==4.66.5
+
+# LLM and API integration
+ollama==0.4.2
+praw==7.7.1
+google-api-python-client==2.163.0
+ratelimit==2.2.1
+
+# Data compression and processing
+zstandard==0.23.0
+sentence-transformers==3.1.0
+
+#hpc
+
+mpi4py==4.1.0

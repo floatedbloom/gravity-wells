@@ -1,0 +1,7 @@
+Starting Ollama on each node and verifying readiness...
+OK nvmgpu-22tmc
+OK nvmgpu-hv46k
+OK nvmgpu-m2dts
+OK nvmgpu-pqfbg
+Cache directory: /home/georgelapin23_gmail.com/gravity_well/reddit_2024/cache/hpc_bias_cache_4711
+Launching analysis with per-task logs in hpc/run_4711_%t.{out,err}

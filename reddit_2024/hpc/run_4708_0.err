@@ -1,0 +1,31 @@
+2025-08-08 17:18:11,117 - INFO - MPI initialized: rank 0/4
+2025-08-08 17:18:11,120 - INFO - Rank 0: Processing subreddits 0-4: ['SandersForPresident', 'flatearth', 'trump', 'science', 'cars']
+2025-08-08 17:18:11,122 - INFO - HPC Parallel Bias Analysis
+2025-08-08 17:18:11,124 - INFO - Total subreddits: 18
+2025-08-08 17:18:11,126 - INFO - MPI nodes: 4
+2025-08-08 17:18:11,127 - INFO - Workers per node: 16
+2025-08-08 17:18:11,129 - INFO - Sample size: 25 users per subreddit
+2025-08-08 17:18:11,130 - INFO - HPC Runtime Estimate:
+2025-08-08 17:18:11,132 - INFO -   Total users: 125
+2025-08-08 17:18:11,134 - INFO -   Workers per node: 16
+2025-08-08 17:18:11,135 - INFO -   MPI nodes: 4
+2025-08-08 17:18:11,137 - INFO -   Estimated time per user: 0.5 minutes
+2025-08-08 17:18:11,138 - INFO -   Total estimated time: 1.1 hours (0.0 days)
+2025-08-08 17:18:11,140 - INFO - Rank 0: Checking Ollama server connection...
+2025-08-08 17:18:11,159 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-08-08 17:18:11,162 - INFO - Rank 0: Ollama server connected. Available models: ['qwen2.5:7b']
+2025-08-08 17:18:11,184 - INFO - Starting HPC parallel bias analysis...
+2025-08-08 17:18:11,186 - INFO - Debug: Current working directory: /home/georgelapin23_gmail.com/gravity_well/reddit_2024
+2025-08-08 17:18:11,188 - INFO - Debug: Checking if data/filtered_analyzable exists: False
+2025-08-08 17:18:11,190 - INFO - Debug: Checking if ../data/filtered_analyzable exists: False
+2025-08-08 17:18:11,192 - INFO - Debug: Checking if ../../data/filtered_analyzable exists: False
+2025-08-08 17:18:11,194 - INFO - Debug: Checking if data/with_likes exists: False
+2025-08-08 17:18:11,195 - INFO - Debug: Checking if ../data/with_likes exists: False
+2025-08-08 17:18:11,197 - INFO - Debug: Checking if ../../data/with_likes exists: False
+2025-08-08 17:18:11,199 - ERROR - Error: Could not find data directory. Tried: [PosixPath('data/filtered_analyzable'), PosixPath('../data/filtered_analyzable'), PosixPath('../../data/filtered_analyzable'), PosixPath('data/with_likes'), PosixPath('../data/with_likes'), PosixPath('../../data/with_likes')]
+2025-08-08 17:18:11,201 - INFO - Rank 0: Using 16 parallel workers
+2025-08-08 17:18:11,203 - INFO - Merging results from all nodes...
+2025-08-08 17:18:11,205 - INFO - Analysis complete!
+2025-08-08 17:18:11,206 - INFO - Total runtime: 0.0 hours
+2025-08-08 17:18:11,208 - INFO - Actual vs estimated: 0.0h vs 1.1h
+2025-08-08 17:18:11,209 - INFO - Cache statistics: {'hits': 0, 'misses': 0, 'hit_rate': 0, 'memory_entries': 0, 'disk_entries': 0}

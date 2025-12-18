@@ -1,0 +1,37 @@
+/home/georgelapin23_gmail.com/gravity_well/reddit_2024/create_conf_bias.py:78: SyntaxWarning: invalid escape sequence '\_'
+  1. **strongly\_against / strongly\_in\_favor**: Marks text showing strong opinions, emotional expressions, or argumentative tones.
+2025-08-08 19:24:40,905 - INFO - MPI initialized: rank 1/4
+2025-08-08 19:24:40,907 - INFO - Rank 1: Processing subreddits 5-9: ['Republican', 'SocialDemocracy', 'Freethought', 'travel', 'math']
+2025-08-08 19:24:40,909 - INFO - HPC Runtime Estimate:
+2025-08-08 19:24:40,910 - INFO -   Total users: 125
+2025-08-08 19:24:40,911 - INFO -   Workers per node: 16
+2025-08-08 19:24:40,913 - INFO -   MPI nodes: 4
+2025-08-08 19:24:40,914 - INFO -   Estimated time per user: 0.5 minutes
+2025-08-08 19:24:40,916 - INFO -   Total estimated time: 1.1 hours (0.0 days)
+2025-08-08 19:24:40,918 - INFO - Rank 1: Checking Ollama server connection...
+2025-08-08 19:24:40,937 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2025-08-08 19:24:40,938 - INFO - Rank 1: Ollama server connected. Available models: ['qwen2.5:7b']
+2025-08-08 19:24:41,600 - INFO - Debug: Current working directory: /home/georgelapin23_gmail.com/gravity_well/reddit_2024
+2025-08-08 19:24:41,603 - INFO - Debug: Checking if data/filtered_analyzable exists: False
+2025-08-08 19:24:41,605 - INFO - Debug: Checking if ../data/filtered_analyzable exists: False
+2025-08-08 19:24:41,607 - INFO - Debug: Checking if ../../data/filtered_analyzable exists: False
+2025-08-08 19:24:41,609 - INFO - Debug: Checking if data/with_likes exists: True
+2025-08-08 19:24:41,610 - INFO - Found data directory: data/with_likes
+2025-08-08 19:24:42,174 - INFO - Debug: Created HPCRedditor: gotterym (type: HPCRedditor)
+2025-08-08 19:24:42,176 - INFO - Debug: Created HPCRedditor: DougA99 (type: HPCRedditor)
+2025-08-08 19:24:42,177 - INFO - Debug: Created HPCRedditor: LifeBeginsAt10kRPM (type: HPCRedditor)
+2025-08-08 19:24:42,179 - INFO - Debug: Created HPCRedditor: chebushka (type: HPCRedditor)
+2025-08-08 19:24:42,180 - INFO - Debug: Created HPCRedditor: YOLOFMEISTER-TRADING (type: HPCRedditor)
+2025-08-08 19:24:42,218 - INFO - Debug: Created HPCComment: eczb12r (type: HPCComment)
+2025-08-08 19:24:42,220 - INFO - Debug: Created HPCComment: eczb2ga (type: HPCComment)
+2025-08-08 19:24:42,221 - INFO - Debug: Created HPCComment: eczb3y1 (type: HPCComment)
+2025-08-08 19:24:42,222 - INFO - Debug: Created HPCComment: eczb43e (type: HPCComment)
+2025-08-08 19:24:42,224 - INFO - Debug: Created HPCComment: abcvle (type: HPCComment)
+2025-08-08 19:24:42,486 - INFO - Debug: Found subreddits in data: ['travel', 'math', 'Republican', 'SocialDemocracy', 'Freethought']
+2025-08-08 19:24:42,488 - INFO - Debug: Looking for subreddits: ['Republican', 'SocialDemocracy', 'Freethought', 'travel', 'math']
+2025-08-08 19:24:42,515 - INFO - Rank 1: Using 16 parallel workers
+2025-08-08 19:24:42,581 - INFO - Rank 1: Skipping already completed subreddit: Republican
+2025-08-08 19:24:42,583 - INFO - Rank 1: Skipping already completed subreddit: SocialDemocracy
+2025-08-08 19:24:42,584 - INFO - Rank 1: Skipping already completed subreddit: Freethought
+2025-08-08 19:24:42,586 - INFO - Rank 1: Skipping already completed subreddit: travel
+2025-08-08 19:24:42,588 - INFO - Rank 1: Skipping already completed subreddit: math

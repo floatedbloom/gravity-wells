@@ -172,3 +172,10 @@ cython_debug/
 
 # pkld module caching
 .pkljar/
+
+# Generated simulation and cluster output
+sim_results/
+reddit_2024/sim_results/
+reddit_2024/hpc/cache/
+reddit_2024/hpc/*.out
+reddit_2024/hpc/*.err

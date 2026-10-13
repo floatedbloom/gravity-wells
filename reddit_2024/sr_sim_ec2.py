@@ -259,14 +259,15 @@ def get_agents(agfile: str):
     try:
         with open(agfile, 'r') as f:
             return pd.read_json(f)[AGENT_ATTRIBUTES].set_index('author')
-    except FileNotFoundError:
+    except (FileNotFoundError, ValueError):
         with open(agfile + '.gz', 'rb') as f:
             return pd.read_json(f, compression='gzip')[AGENT_ATTRIBUTES].set_index('author')
 
 def get_dat(rcfile: str):
     with open(rcfile, 'r') as f:
         parms = json.load(f)
-    return parms, get_agents("data/zipped/" + parms['FILE_BASE'] + '_auths_agree.json')
+    agent_file = pathlib.Path(__file__).resolve().parent / 'data' / 'zipped' / (parms['FILE_BASE'] + '_auths_agree.json')
+    return parms, get_agents(str(agent_file))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -286,7 +287,7 @@ if __name__ == "__main__":
     # Derive subreddit from FILE_BASE to select the correct bias file
     file_base = parms.get('FILE_BASE', '')
     subreddit = file_base.split('_', 1)[0] if '_' in file_base else file_base
-    derived_bias_path = f'data/bias/bias_values_{subreddit}.json'
+    derived_bias_path = pathlib.Path(__file__).resolve().parent / 'data' / 'bias' / f'bias_values_{subreddit.lower()}.json'
 
     sim = Simulation(
         agents_df=agents_df,
@@ -297,7 +298,7 @@ if __name__ == "__main__":
         decay_rate=parms.get('DECAY_RATE', 0.9),
         exit_frac=parms.get('EXIT_FRAC', 0.1),
         join_frac=parms.get('JOIN_FRAC', 0.1),
-        bias_path=derived_bias_path
+        bias_path=str(derived_bias_path)
     )
     
     # CSV output in output directory

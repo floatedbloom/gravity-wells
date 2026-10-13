@@ -740,10 +740,9 @@ def create_bias_files(subreddit_subset):
     Args:
         subreddit_subset: List of Subreddit objects to process
     """
-    # Path to the bias values directory using relative path
-    # Navigate up one directory from current script location, then to data/bias
+    # Store bias values alongside the other reddit_2024 data.
     current_dir = Path(__file__).parent
-    bias_dir = (current_dir.parent / "data" / "bias")
+    bias_dir = current_dir / "data" / "bias"
     
     # Ensure bias directory exists
     bias_dir.mkdir(parents=True, exist_ok=True)

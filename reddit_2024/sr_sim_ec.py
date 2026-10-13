@@ -477,9 +477,9 @@ def get_agents(agfile):
             logger.debug(f'Reading agents from {fullpath}.')
             # Load only columns desired for agent definition and index by author
             agents_df = pd.read_json(f)[AGENT_ATTRIBUTES].set_index('author')
-    except FileNotFoundError:     # unsuccessful -- try compressed file
+    except (FileNotFoundError, ValueError):     # unsuccessful -- try compressed file
         fullpath2 = fullpath + '.gz'
-        logger.debug(f'File {agfile} not found. Trying {fullpath2}')
+        logger.debug(f'File {fullpath} unavailable. Trying {fullpath2}')
         try:    # try reading from compressed file
             with open(fullpath2, 'rb') as f:  # need 'rb' for zipped files!
                 logger.debug(f'Reading agents from {agfile}.')
@@ -520,7 +520,7 @@ def get_dat(rcfile,DEBUG=False):
     # print out all values to record sim settings
     for key,value in parms.items():
         logger.debug(f'{key} = {value}')
-    agfile = "reddit_2024/data/zipped/" + basefn + '_auths_agree.json'
+    agfile = basefn + '_auths_agree.json'
     agents_df = get_agents(agfile)
     return (parms,agents_df)
 

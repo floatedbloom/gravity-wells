@@ -12,11 +12,14 @@ The [pre-cleanup branch](https://github.com/floatedbloom/gravity-wells/tree/arch
 - `reddit_2024/sr_sim_ec2.py`: simulation with per-user confirmation-bias values.
 - `reddit_2024/create_conf_bias.py`: estimates those values from Reddit comments using Ollama.
 - `reddit_2024/data/rcs/`: simulation parameter files.
-- `reddit_2024/data/zipped/` and `reddit_2024/data/bias/`: agent data and saved bias values.
+- `reddit_2024/data/zipped/`: agreement records (`*_agree`) and per-author simulation inputs (`*_auths_agree`). Some files are compressed; the simulation reads either form.
+- `reddit_2024/data/bias/`: saved confirmation-bias values.
 - `reddit_2024/hpc/`: WSU cluster scripts. These contain cluster-specific paths and SLURM settings.
 - `reddit_2024/exit_order_logs/` and the CSV files: saved results used by the analysis scripts.
 
 Most JSON files use Git LFS. Install Git LFS and run `git lfs pull` after cloning; an unresolved file beginning with `version https://git-lfs.github.com/spec/v1` is only a pointer.
+
+The former `data/thompson_auths_agrees/` directory duplicated files in `data/zipped/` and remains available on the pre-cleanup branch.
 
 ## Run a simulation
 

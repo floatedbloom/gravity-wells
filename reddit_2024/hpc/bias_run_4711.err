@@ -1,4 +1,0 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-srun: got SIGCONT
-slurmstepd-nvmgpu-22tmc: error: *** JOB 4711 ON nvmgpu-22tmc CANCELLED AT 2025-08-09T00:43:05 ***
-srun: forcing job termination
